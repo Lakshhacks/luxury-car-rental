@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Your Vehicle | Velora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu"><a href="../index.html">Home</a><a href="cars.html">Our Cars</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html" class="btn btn-outline">Sign In</a></div>
+</nav></header>
+
+<main class="container section">
+    <div class="section-heading"><p class="eyebrow">RESERVE YOUR DRIVE</p><h1>Complete Your Booking</h1><p>Provide your details to prepare your rental request.</p></div>
+
+    <div class="booking-layout">
+        <form class="booking-form" data-booking-form>
+            <h2>Your Information</h2>
+            <div class="form-group"><label for="fullName">Full name</label><input id="fullName" name="fullName" autocomplete="name" required maxlength="100"></div>
+            <div class="form-group"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="form-group"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+
+            <h2>Rental Details</h2>
+            <div class="form-group"><label for="pickupDate">Pickup date</label><input id="pickupDate" name="pickupDate" data-pickup-date type="date" required></div>
+            <div class="form-group"><label for="returnDate">Return date</label><input id="returnDate" name="returnDate" data-return-date type="date" required></div>
+            <div class="form-group"><label for="pickupLocation">Pickup location</label><input id="pickupLocation" name="pickupLocation" required placeholder="Enter pickup location"></div>
+
+            <h2>Optional Extras</h2>
+            <label class="extra-option"><input type="checkbox" data-extra-type="daily" data-price="25"> Premium insurance — $25/day</label>
+            <label class="extra-option"><input type="checkbox" data-extra-type="once" data-price="40"> Vehicle delivery — $40</label>
+
+            <div class="form-group"><label for="notes">Special requests (optional)</label><textarea id="notes" name="notes" rows="4" maxlength="1000"></textarea></div>
+            <p class="small-note">Submitting this form prepares a demo booking only. No reservation or payment is processed.</p>
+            <div data-booking-message hidden></div>
+            <div data-booking-confirmation hidden></div>
+            <button type="submit" class="btn">Prepare Booking</button>
+        </form>
+
+        <aside class="booking-summary">
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h2 data-booking-car>Selected vehicle</h2>
+            <p>Daily rate: <strong data-booking-rate>$0</strong></p>
+            <p>Rental days: <strong data-booking-days>0</strong></p>
+            <hr>
+            <p>Vehicle subtotal: <strong data-booking-subtotal>$0</strong></p>
+            <p>Optional extras: <strong data-booking-extras>$0</strong></p>
+            <p class="booking-total">Estimated total: <strong data-booking-total>$0</strong></p>
+            <a href="cars.html">Change vehicle</a>
+        </aside>
+    </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+<script src="../javascript/booking.js" defer></script>
+</body>
+</html>

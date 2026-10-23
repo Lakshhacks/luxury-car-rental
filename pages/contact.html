@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Velora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu"><a href="../index.html">Home</a><a href="cars.html">Our Cars</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a><a href="login.html" class="btn btn-outline">Sign In</a></div>
+</nav></header>
+
+<main class="container section">
+    <div class="section-heading"><p class="eyebrow">WE'RE HERE TO HELP</p><h1>Let's Talk</h1><p>Have a question about a vehicle or rental? Send us a message.</p></div>
+    <div class="contact-layout">
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Our team can help with vehicle enquiries, rental requirements, and general questions.</p>
+            <h3>Email</h3><p>Use the contact form to send your enquiry.</p>
+            <h3>Business Hours</h3><p>Availability and support hours should be confirmed with the rental team.</p>
+            <h3>Vehicle Enquiries</h3><p><a href="cars.html">Browse the fleet</a> before sending your preferred model and dates.</p>
+        </section>
+        <form class="contact-form" data-contact-form>
+            <div class="form-group"><label for="contactName">Full name</label><input id="contactName" name="name" type="text" required maxlength="100" autocomplete="name"></div>
+            <div class="form-group"><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" required maxlength="254" autocomplete="email"></div>
+            <div class="form-group"><label for="contactSubject">Subject</label><input id="contactSubject" name="subject" type="text" required maxlength="150"></div>
+            <div class="form-group"><label for="contactMessage">Your message</label><textarea id="contactMessage" name="message" rows="6" required maxlength="5000"></textarea></div>
+            <div hidden aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+            <div data-contact-message hidden></div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+<script src="../javascript/contact.js" defer></script>
+</body>
+</html>

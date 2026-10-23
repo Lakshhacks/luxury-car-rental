@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account | Velora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu"><a href="../index.html">Home</a><a href="cars.html">Our Cars</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html" class="btn btn-outline">Sign In</a></div>
+</nav></header>
+
+<main class="auth-section container section">
+    <section class="auth-card" id="registerPanel">
+        <p class="eyebrow">BECOME A MEMBER</p>
+        <h1>Create Your Account</h1>
+        <p>Join Velora to make your rental experience easier.</p>
+
+        <form id="registerForm">
+            <div class="form-group"><label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" required maxlength="100" autocomplete="name"></div>
+            <div class="form-group"><label for="registerEmail">Email address</label><input id="registerEmail" name="email" type="email" required autocomplete="email"></div>
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input id="registerPassword" name="password" type="password" required minlength="8" autocomplete="new-password">
+                <button type="button" data-toggle-password data-target="registerPassword" aria-label="Show password">Show</button>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm password</label>
+                <input id="confirmPassword" name="confirmPassword" type="password" required minlength="8" autocomplete="new-password">
+            </div>
+            <label class="checkbox-label"><input type="checkbox" name="terms" required> I agree to the applicable terms and privacy policy.</label>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
+    </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+<script src="../javascript/auth.js" defer></script>
+</body>
+</html>

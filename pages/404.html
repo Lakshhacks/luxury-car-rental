@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found | Velora</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .error-page {
+            min-height: 75vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        .error-code {
+            color: #c9a45c;
+            font-size: clamp(5rem, 18vw, 11rem);
+            font-weight: 800;
+            line-height: 1;
+            margin: 0 0 20px;
+        }
+        .error-page p {
+            max-width: 520px;
+            margin: 16px auto 28px;
+        }
+        .error-actions {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="cars.html">Our Cars</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav></header>
+
+<main class="error-page container">
+    <div>
+        <p class="error-code">404</p>
+        <p class="eyebrow">WRONG TURN?</p>
+        <h1>This road ends here.</h1>
+        <p>The page you're looking for may have moved or no longer exists. Let's get you back to something extraordinary.</p>
+        <div class="error-actions">
+            <a href="../index.html" class="btn">Back to Home</a>
+            <a href="cars.html" class="btn btn-outline">Explore Our Cars</a>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+</body>
+</html>

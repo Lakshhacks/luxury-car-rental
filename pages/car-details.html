@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vehicle Details | Velora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/car-details.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu"><a href="../index.html">Home</a><a href="cars.html">Our Cars</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html" class="btn btn-outline">Sign In</a></div>
+</nav></header>
+
+<main class="container section">
+    <p><a href="cars.html">← Back to all cars</a></p>
+    <div class="car-details" data-car-details data-car-name="Mercedes-Benz S-Class" data-daily-rate="350" data-currency="USD">
+        <div class="car-gallery" data-car-gallery>
+            <img data-main-car-image class="car-main-image" src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=1400&q=85" alt="Mercedes-Benz S-Class luxury sedan">
+            <div class="car-thumbnails">
+                <button type="button" data-car-thumbnail data-image="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=1400&q=85" aria-pressed="true"><img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=250&q=75" alt="View one"></button>
+                <button type="button" data-car-thumbnail data-image="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=85" aria-pressed="false"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=250&q=75" alt="View two"></button>
+            </div>
+        </div>
+        <div class="car-details-info">
+            <p class="eyebrow">THE EXECUTIVE COLLECTION</p>
+            <h1 data-car-name>Mercedes-Benz S-Class</h1>
+            <p class="car-card-price"><strong data-daily-rate="350">$350</strong> / day</p>
+            <p>Discover exceptional comfort, refined design, and a premium driving experience in this luxury sedan.</p>
+            <div class="spec-grid">
+                <div><strong>5</strong><span>Seats</span></div>
+                <div><strong>Automatic</strong><span>Transmission</span></div>
+                <div><strong>Premium</strong><span>Interior</span></div>
+                <div><strong>4 Doors</strong><span>Body Style</span></div>
+            </div>
+            <h2>Choose Your Dates</h2>
+            <div class="date-fields">
+                <label>Pickup date<input type="date" data-pickup-date required></label>
+                <label>Return date<input type="date" data-return-date required></label>
+            </div>
+            <p>Rental duration: <strong data-rental-days>Select valid dates</strong></p>
+            <p>Estimated rental: <strong data-rental-estimate>$0</strong></p>
+            <a href="booking.html" data-book-car class="btn">Continue to Booking</a>
+            <p class="small-note">Final pricing and vehicle availability must be confirmed before a rental is accepted.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+<script src="../javascript/car-details.js" defer></script>
+</body>
+</html>

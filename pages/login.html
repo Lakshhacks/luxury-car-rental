@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In | Velora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu"><a href="../index.html">Home</a><a href="cars.html">Our Cars</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html" class="btn btn-outline active">Sign In</a></div>
+</nav></header>
+
+<main class="auth-section container section">
+    <section class="auth-card" id="loginPanel">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h1>Sign In</h1>
+        <p>Access your Velora rental account.</p>
+
+        <form id="loginForm">
+            <div class="form-group"><label for="loginEmail">Email address</label><input id="loginEmail" name="email" type="email" required autocomplete="email"></div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input id="loginPassword" name="password" type="password" required minlength="8" autocomplete="current-password">
+                <button type="button" data-toggle-password data-target="loginPassword" aria-label="Show password">Show</button>
+            </div>
+            <button type="button" data-forgot-password class="text-link">Forgot password?</button>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+
+        <p>New to Velora? <a href="register.html">Create an account</a></p>
+        <p><a href="my-bookings.html">View My Bookings</a></p>
+    </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+<script src="../javascript/auth.js" defer></script>
+</body>
+</html>

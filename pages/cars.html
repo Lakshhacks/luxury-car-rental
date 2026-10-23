@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Cars | Velora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cars.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+    <a href="../index.html" class="logo">VELORA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="nav-menu">
+        <a href="../index.html">Home</a><a href="cars.html" class="active">Our Cars</a>
+        <a href="services.html">Services</a><a href="about.html">About</a>
+        <a href="contact.html">Contact</a><a href="login.html" class="btn btn-outline">Sign In</a>
+    </div>
+</nav></header>
+
+<main class="container section">
+    <div class="section-heading">
+        <p class="eyebrow">THE COLLECTION</p>
+        <h1>Find Your Perfect Drive</h1>
+        <p>Explore our collection of premium vehicles.</p>
+    </div>
+
+    <form class="cars-search-form">
+        <label for="carSearch">Search vehicles</label>
+        <input id="carSearch" type="search" data-car-search placeholder="Search by make or model">
+        <button type="submit" class="btn">Search</button>
+    </form>
+
+    <div class="cars-toolbar">
+        <div>
+            <label for="category">Category</label>
+            <select id="category" data-category-select>
+                <option value="">All categories</option>
+                <option value="sedan">Luxury Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="sports">Sports Car</option>
+                <option value="electric">Electric</option>
+            </select>
+        </div>
+        <div>
+            <label for="sortCars">Sort by</label>
+            <select id="sortCars" class="cars-sort">
+                <option value="default">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A–Z</option>
+                <option value="name-desc">Name: Z–A</option>
+            </select>
+        </div>
+        <div>
+            <label for="priceRange">Maximum daily price: <span data-price-max>$1,000</span></label>
+            <input id="priceRange" type="range" min="0" max="1000" value="1000" data-price-range>
+        </div>
+        <button type="button" class="cars-filter-reset btn btn-outline">Reset Filters</button>
+    </div>
+
+    <p class="cars-results-count">Vehicles found: <strong>6</strong></p>
+    <p class="cars-empty-state" hidden>No vehicles match your filters. Try adjusting your search.</p>
+
+    <div class="cars-grid">
+        <article class="car-card" data-id="s-class" data-name="Mercedes-Benz S-Class" data-category="sedan" data-price="350">
+            <img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=900&q=80" alt="Mercedes-Benz luxury sedan" loading="lazy">
+            <div class="car-card-content"><button type="button" class="car-card-favorite" aria-label="Add to favorites" aria-pressed="false">♡</button><p class="eyebrow">SEDAN</p><h2 class="car-card-title">Mercedes-Benz S-Class</h2><p>5 seats · Automatic · Luxury</p><p class="car-card-price"><strong>$350</strong> / day</p><a class="btn" href="car-details.html?car=s-class">View Details</a></div>
+        </article>
+        <article class="car-card" data-id="urus" data-name="Lamborghini Urus" data-category="suv" data-price="900">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80" alt="Luxury performance SUV" loading="lazy">
+            <div class="car-card-content"><button type="button" class="car-card-favorite" aria-label="Add to favorites" aria-pressed="false">♡</button><p class="eyebrow">SUV</p><h2 class="car-card-title">Lamborghini Urus</h2><p>5 seats · Automatic · Performance</p><p class="car-card-price"><strong>$900</strong> / day</p><a class="btn" href="car-details.html?car=urus">View Details</a></div>
+        </article>
+        <article class="car-card" data-id="porsche" data-name="Porsche 911" data-category="sports" data-price="750">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Porsche 911 sports car" loading="lazy">
+            <div class="car-card-content"><button type="button" class="car-card-favorite" aria-label="Add to favorites" aria-pressed="false">♡</button><p class="eyebrow">SPORTS</p><h2 class="car-card-title">Porsche 911</h2><p>2 seats · Automatic · Sport</p><p class="car-card-price"><strong>$750</strong> / day</p><a class="btn" href="car-details.html?car=porsche">View Details</a></div>
+        </article>
+        <article class="car-card" data-id="bmw" data-name="BMW 7 Series" data-category="sedan" data-price="400">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80" alt="BMW premium sedan" loading="lazy">
+            <div class="car-card-content"><button type="button" class="car-card-favorite" aria-label="Add to favorites" aria-pressed="false">♡</button><p class="eyebrow">SEDAN</p><h2 class="car-card-title">BMW 7 Series</h2><p>5 seats · Automatic · Executive</p><p class="car-card-price"><strong>$400</strong> / day</p><a class="btn" href="car-details.html?car=bmw">View Details</a></div>
+        </article>
+        <article class="car-card" data-id="range-rover" data-name="Range Rover" data-category="suv" data-price="600">
+            <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=900&q=80" alt="Premium luxury vehicle" loading="lazy">
+            <div class="car-card-content"><button type="button" class="car-card-favorite" aria-label="Add to favorites" aria-pressed="false">♡</button><p class="eyebrow">SUV</p><h2 class="car-card-title">Range Rover</h2><p>5 seats · Automatic · Comfort</p><p class="car-card-price"><strong>$600</strong> / day</p><a class="btn" href="car-details.html?car=range-rover">View Details</a></div>
+        </article>
+        <article class="car-card" data-id="tesla" data-name="Tesla Model S" data-category="electric" data-price="300">
+            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=900&q=80" alt="Tesla electric car" loading="lazy">
+            <div class="car-card-content"><button type="button" class="car-card-favorite" aria-label="Add to favorites" aria-pressed="false">♡</button><p class="eyebrow">ELECTRIC</p><h2 class="car-card-title">Tesla Model S</h2><p>5 seats · Electric · Modern</p><p class="car-card-price"><strong>$300</strong> / day</p><a class="btn" href="car-details.html?car=tesla">View Details</a></div>
+        </article>
+    </div>
+</main>
+
+<footer class="site-footer"><div class="container footer-bottom">© <span data-current-year></span> Velora Luxury Rentals.</div></footer>
+<script src="../javascript/main.js" defer></script>
+<script src="../javascript/cars.js" defer></script>
+</body>
+</html>
